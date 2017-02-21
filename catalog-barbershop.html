@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title> Барбершоп «Бородинский». Каталог </title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <nav class="main-navigation">
+          <ul>
+            <div class="index-logo">
+              <img src="img/index-logo.png" width="113" heigh="26"
+               alt="Барбершоп «Бородинский»" href="#">
+               <!-- по примеру демо версии я делал все тут. подумал что могу взять
+               данные про лого с первого макета, поменять розмер и тут оставить.
+               Я сделал лого одним из елементов списака и добавил ссылку чтобы при
+               клике на него переходить на главную  -->
+            </div>
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Прайс-лист</a></li>
+            <li><a href="#" selected >Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="user-block">
+          <a class="login" href="#"> Вход </a>
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      <section class="breadcrumbs"><!-- Сначала пробовал с тегом div но на мой
+         взгял тег section будет уместней -->
+        <h2>Средства для ухода</h2>
+          <a class="main-page" href="#">Главная</a>
+          <a class="store" href="#">Магазин</a>
+          <a class="items" href="#" selected>Средства для ухода</a>
+      </section>
+      <form action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data">
+        <h2> Производители: </h2>
+          <input type="checkbox" name="bk" id="baxter" checked></input>
+            <label for="baxter"> Baxter of California </label><br>
+          <input type="checkbox" name="mn" id="MR"></input>
+            <label for="MR">  MR natty </label>
+          <input type="checkbox" name="s" id="Suevecito" checked></input>
+            <label> Suavecito </label><br>
+          <input type="checkbox" name="mg" id="Malin"></input>
+            <label for="Malin"> Malin+goets </label><br>
+          <input type="checkbox" name="m" id="Murray"></input>
+            <label for="Murray"> Murray`s </label><br>
+          <input type="checkbox" name="ac" id="ac" checked></input>
+            <label for="ac"> American crew </label>
+        <h2> ГРУПЫ ТОВАРОВ: </h2>
+          <input type=checkbox name="bp" id="britva"></input>
+            <label for="britva"> Бритвенные  принадлежности </label><br>
+          <input type=checkbox name="sy" id="sredstva"checked ></input>
+            <label for="sredstva"> Средства для ухода </label><br>
+          <input type=checkbox name="a" id="aksesuaru"></input>
+            <label for="aksesuaru"> Аксесуары </label><br>
+          <input type="submit" value="Показать">
+    </form>
+    <div>
+      <article>
+        <img src="img/index-item1.png" width="130" heigh="130" alt="Набор для путешествий" href="#">
+        <p>Набор для путишествий "BAXTER OF CALIFORNIA"</p>
+        <p name="price">2900 РУБ.</p>
+        <button name="button" value="buy"> Купить </button>
+      </article>
+      <article>
+        <img src="img/index-item2.png" width="130" heigh="130" alt="Увлажняющий кондиционер" href="#">
+        <p>Увлажняющий кондиционер "BAXTER OF CALIFORNIA</p>
+        <p name="price">750 РУБ.</p>
+        <button name="button" value="buy"> Купить </button>
+      </article>
+      <article>
+        <img src="img/index-item3.png" width="130" heigh="130" alt="Гель для волос" href="#">
+        <p>Гель для волос "SUAVECITO"</p>
+        <p name="price">290 РУБ.</p>
+        <button name="button" value="buy"> Купить </button>
+      </article>
+      <article>
+        <img src="img/index-item4.png" width="130" heigh="130" alt="глина для укладки волос" href="#">
+        <p>глина для укладки волос "AMERICAN CREW"</p>
+        <p name="price">500 РУБ.</p>
+        <button name="button" value="buy"> Купить </button>
+      </article>
+      <article>
+        <img src="img/index-item5.png" width="130" heigh="130" alt="Гель для волос" href="#">
+        <p>Гель для волос "AMERICAN CREW"</p>
+        <p name="price">300 РУБ.</p>
+        <button name="button" value="buy"> Купить </button>
+      </article>
+      <article>
+        <img src="img/index-item6.png" width="130" heigh="130" alt="Увлажняющий кондиционер" href="#">
+        <p>Набор для бритья "BAXTER OF CALIFORNIA"</p>
+        <p name="price">3900 РУБ.</p>
+        <button name="button" value="buy"> Купить </button>
+      </article>
+      <div class="paginator">
+        <a href="1"> 1 </a>
+        <a href="2"> 2 </a>
+        <a href="3"> 3 </a>
+        <a href="4"> 4 </a>
+      </div>
+    </div>
+  </main>
+  <footer class="main-footer">
+    <div class="container">
+      <section class="footer-contacts">
+        <p>Барбершоп «Бородинский» </p> <br>
+        <p>  Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8 </p> <br>
+          <a href="#">Как нас найти?</a><br>
+        <p>  Телефон: +7 (812) 666-02-66 </p>
+      </section>
+      <section class="footer-social">
+        <p>Давайте дружить!</p>
+        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+      </section>
+      <section class="footer-copyright">
+        <p>Разработано</p>
+        <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+      </section>
+    </div>
+  </footer>
+</body>
+</html>
